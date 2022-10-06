@@ -1,0 +1,246 @@
+@import "./base/base";
+@import "./utils/variables";
+@import "./utils/mixins";
+
+header{
+    height:88px ;
+    width: 100%;
+    box-shadow: 1px 1px 15px gray;
+    @include center(row);
+    box-shadow: 0px 0px 10px gray;
+    z-index: 1;
+    position: relative;
+    img{
+        height:35px;
+        object-fit: cover;
+    }
+}
+
+main{
+    width: 100%
+}
+
+.location{
+    @include center(row);
+    height: 65px;
+    background-color: rgb(233, 233, 233);
+    z-index: 0;
+    &__logo{
+        margin-right:15px;
+        font-size: 20px;
+    }
+    &__text{
+        font-size: 20px;
+    }
+}
+
+.explore{
+    @include center(column);
+    padding: 30px;
+    background-color: #f6f6f6;
+    flex-wrap: wrap;
+    margin: 0%;
+        h1{
+            font-size: 30px;
+            margin: 0px;
+        }
+        p{
+            margin: 20px 0px 20px;
+            padding: 0%;
+            font-size: 18px;
+            font-weight:300;
+        }
+        &__btn{
+            @include pinkbutton(215px);
+            &:hover{
+                @include hover;
+            }
+        }
+}
+
+.preparation{
+    padding: 30px 15px;
+    margin: 0%;
+    &__title{
+        font-size: 25px;
+        margin: 0px 0px 30px;
+    }
+    &__container__buttons{
+        margin: 0%;
+        padding: 0% 10px;
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+    }
+    &__button{
+        list-style-type: none;
+        width: auto;
+        height: 65px;
+        background: white;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        border: none;
+        box-shadow:  rgb(0 0 0 / 40%) 0px 2px 4px, rgb(0 0 0 / 30%) 0px 7px 13px -3px, rgb(0 0 0 / 20%) 0px -2px 0px inset;
+        border-radius: 1rem;;
+        font-weight: bold;
+        transform: scale(1);
+        transition: 500ms ease 0ms;
+        &:hover{
+            @include hover;
+            background-color: #f6f6f6;
+            & > .preparation__button__logo{
+                color: #9356DC;
+            }
+        }
+        &__number{
+            position: relative;
+            color: white;
+            background-color: $Primaire;
+            padding: 3px 8px;
+            height: 20px;
+            border-radius: 500px;
+            transform: translateX(-50%);
+        }
+        &__logo{
+            color: gray;
+            margin-right: 15px;
+        }
+    }
+}
+
+.restaurants{
+    background-color: #f6f6f6;
+    padding: 30px 20px;
+    &__title{
+       margin-bottom: 30px; 
+    }
+    &__all__cards{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        height: 100%;
+        width: 100%;
+        padding: 0% 0px 10px;
+        }
+    & .card{
+        height: 275px;
+        width: 100%;
+        box-shadow:  0 2px 5px rgb(0 0 0 / 40%);
+        text-decoration: none;
+        color:initial;
+        border-radius: 15px;
+        margin: 0%;
+        padding: 0px;
+        box-sizing: content-box; 
+        border: none;  
+        overflow: hidden;
+        box-sizing: content-box;
+        transform: scale(1);
+        transition: 500ms ease 0ms;
+        &:hover{
+            @include hover;
+        }
+        &__new{
+            position:absolute;
+            background: #99e2d0;
+            color:#1b6150;
+            padding: 8px 15px;
+            top:20px;
+            right: 20px;
+            font-weight: 500;
+            border-radius: 3px;
+        }
+        &__photo{
+            width: 100%;
+            height: 200px;
+            margin: 0%;
+            padding: 0px;
+            border: none;
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit:cover;
+            }
+         }
+        &__descriptions{
+            display: flex;
+            background: white;
+            margin: 0px;
+            padding: 10px 20px;
+            width: auto;
+            height: 50px;
+            justify-content: space-between;
+            border-radius: 15px;
+            &__text{
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+                & h3{
+                margin: 0%;
+                padding: 0%;
+                }
+                & p{
+                margin: 5px 0px 0;
+                padding: 0%;
+                }
+            }
+        }
+        &__heart{
+            align-self: center;
+            text-align: center;
+            &--hidden{
+                font-size: 30px;
+                position: relative;
+                color: black;
+                transition: opacity 600ms;
+                transform-origin: bottom center;
+                z-index: 1;
+                background: white;
+                &:hover {
+                    opacity: 0;
+                }
+            }
+            &--color{
+                position:absolute;
+                font-size: 30px;
+                background:linear-gradient($Secondaire,$Primaire);
+                background-clip:text;
+                color: transparent;
+        }
+        }
+    }
+}
+
+footer{
+    overflow: hidden;
+    background: rgb(54, 54, 54);
+    margin: 0%;
+    padding: 0 20px 20px;
+    height: auto;
+}
+
+.footer{
+    &__title{
+        font-family: $Titres;
+        color: white;
+    }
+    &__links{
+        list-style-type: none;
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        a{
+            color: white;
+            text-decoration: none;
+            &:hover{
+                text-decoration:underline;
+            }
+        }
+        i{
+            margin-right: 5px;
+        }
+    }
+}
