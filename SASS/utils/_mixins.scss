@@ -25,3 +25,24 @@
             transform: scale(1);
             transition: 500ms ease 0ms;
 }
+
+@mixin header($indexbtn) {
+    height:88px ;
+    width: 100%;
+    box-shadow: 1px 1px 15px gray;
+    @include center(row);
+    box-shadow: 0px 0px 10px gray;
+    z-index: 1;
+    position: relative;
+    .index__btn{
+        position: absolute;
+        left: 10%;
+        color: black;
+        font-size: 25px;
+        display: $indexbtn;
+    }
+    img{
+        height:35px;
+        object-fit: cover;
+    }
+}

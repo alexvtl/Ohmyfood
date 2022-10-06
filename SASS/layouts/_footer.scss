@@ -1,0 +1,32 @@
+
+footer{
+        overflow: hidden;
+        background: rgb(54, 54, 54);
+        margin: 0%;
+        padding: 0 20px 20px;
+        height: auto;     
+    }
+.footer{    
+    &__title{
+        font-family: $Titres;
+        color: white;
+    }
+    &__links{
+        list-style-type: none;
+        margin: 0%;
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        a{
+            color: white;
+            text-decoration: none;
+            &:hover{
+                text-decoration:underline;
+            }
+        }
+        i{
+            margin-right: 5px;
+        }
+    }
+}
