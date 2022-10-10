@@ -84,7 +84,7 @@ footer {
           background-clip: text;
   width: 100%;
 }
-.loading__page__text > .maison__objet {
+.loading__page__text > .loading__container {
   height: 10px;
   margin: 10px auto;
   background-color: white;
@@ -96,7 +96,7 @@ footer {
   border-radius: 10px;
   border: solid black;
 }
-.loading__page__text > .maison__objet > .switch {
+.loading__page__text > .loading__container > .loading__bar {
   width: 100%;
   height: 100%;
   transform: scale(0, 1);

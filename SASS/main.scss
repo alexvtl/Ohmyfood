@@ -36,7 +36,7 @@ opacity: 0;
             background-clip:text;
             width: 100%;
         }
-        > .maison__objet{
+        > .loading__container{
             height:10px;
             margin:10px auto;
             background-color:white;
@@ -47,7 +47,7 @@ opacity: 0;
             border:solid;
             border-radius: 10px;
             border: solid black;
-                & > .switch{
+                & > .loading__bar{
                     width:100%;
                     height:100%;
                     transform: scale(0,1);
