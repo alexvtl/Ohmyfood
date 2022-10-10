@@ -46,6 +46,16 @@ footer {
   z-index: -1;
   opacity: 0;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .loading__page {
+    height: 2071px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .loading__page {
+    height: 1461px;
+  }
+}
 .loading__page__text {
   position: -webkit-sticky;
   position: sticky;
@@ -295,6 +305,12 @@ main {
   flex-direction: column;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .preparation__container__buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 .preparation__button {
   list-style-type: none;
   width: auto;
@@ -309,6 +325,11 @@ main {
   font-weight: bold;
   transform: scale(1);
   transition: 500ms ease 0ms;
+}
+@media screen and (min-width: 768px) {
+  .preparation__button {
+    width: 33%;
+  }
 }
 .preparation__button:hover {
   transform: scale(1.03);
@@ -332,6 +353,11 @@ main {
   color: gray;
   margin-right: 15px;
 }
+@media screen and (min-width: 768px) {
+  .preparation__button__logo {
+    margin-right: 20px;
+  }
+}
 
 .restaurants {
   background-color: #f6f6f6;
@@ -347,6 +373,13 @@ main {
   height: 100%;
   width: 100%;
   padding: 0% 0px 10px;
+  justify-content: center;
+}
+@media screen and (min-width: 1025px) {
+  .restaurants__all__cards {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
 }
 .restaurants .card {
   height: 275px;
@@ -363,6 +396,11 @@ main {
   box-sizing: content-box;
   transform: scale(1);
   transition: 500ms ease 0ms;
+}
+@media screen and (min-width: 1025px) {
+  .restaurants .card {
+    width: 48%;
+  }
 }
 .restaurants .card:hover {
   transform: scale(1.03);

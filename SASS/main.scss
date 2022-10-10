@@ -11,6 +11,12 @@ position: absolute;
 animation: loading 2.5s;
 z-index: -1;
 opacity: 0;
+@include tablet-only{
+    height: 2071px;
+}
+@include desktop-only{
+    height: 1461px;
+}
     &__text{
         position: sticky;
         top: 40%;
@@ -142,6 +148,10 @@ main{
         display: flex;
         flex-direction: column;
         gap:30px;
+        @include tablet-desktop{
+            flex-direction: row;
+            justify-content: center;
+        }
     }
     &__button{
         list-style-type: none;
@@ -157,6 +167,9 @@ main{
         font-weight: bold;
         transform: scale(1);
         transition: 500ms ease 0ms;
+        @include tablet-desktop{
+            width: 33%;
+        }
         &:hover{
             @include hover;
             background-color: #f6f6f6;
@@ -176,6 +189,9 @@ main{
         &__logo{
             color: gray;
             margin-right: 15px;
+            @include tablet-desktop{
+                margin-right: 20px;
+            }
         }
     }
 }
@@ -193,6 +209,11 @@ main{
         height: 100%;
         width: 100%;
         padding: 0% 0px 10px;
+        justify-content: center;
+        @include desktop-only{
+            flex-flow: row wrap;
+            justify-content: center;
+        }
         }
     & .card{
         height: 275px;
@@ -209,6 +230,9 @@ main{
         box-sizing: content-box;
         transform: scale(1);
         transition: 500ms ease 0ms;
+        @include desktop-only{
+            width: 48%;
+        }
         &:hover{
             @include hover;
         }
