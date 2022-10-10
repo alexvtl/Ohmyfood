@@ -61,14 +61,14 @@ footer {
   position: sticky;
   top: 40%;
   margin: 0 auto;
-  width: auto;
+  width: 100%;
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
   display: flex;
   justify-content: center;
-  font-size: 60px;
+  font-size: 50px;
   font-family: Shrikhand;
   display: flex;
   flex-direction: column;
@@ -82,6 +82,7 @@ footer {
           animation: look 2s ease both;
   -webkit-background-clip: text;
           background-clip: text;
+  width: 100%;
 }
 .loading__page__text > .maison__objet {
   height: 10px;
@@ -116,7 +117,7 @@ footer {
             animation-timing-function: ease-out;
   }
   80% {
-    transform: scaleX(0.5);
+    transform: scaleX(0.7);
     -webkit-animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
             animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
   }
@@ -136,7 +137,7 @@ footer {
             animation-timing-function: ease-out;
   }
   80% {
-    transform: scaleX(0.5);
+    transform: scaleX(0.7);
     -webkit-animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
             animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
   }

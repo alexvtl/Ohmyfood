@@ -21,19 +21,20 @@ opacity: 0;
         position: sticky;
         top: 40%;
         margin: 0 auto;
-        width: auto;
+        width: 100%;
         background:linear-gradient($Secondaire,$Primaire);
         background-clip:text;
         color: transparent;
         display: flex;
         justify-content: center;
-        font-size: 60px;
+        font-size: 50px;
         font-family: $Titres;
         @include center(column);
         > span{
             opacity: 1;
             animation:look 2s ease both;
             background-clip:text;
+            width: 100%;
         }
         > .maison__objet{
             height:10px;
@@ -63,7 +64,7 @@ opacity: 0;
     30%{transform: scaleX(0.3);
         animation-timing-function: ease-out;
     }
-    80%{transform: scaleX(0.5);
+    80%{transform: scaleX(0.7);
         animation-timing-function: cubic-bezier(.9,0,.1,1);}
     100%{ transform: scaleX(1);}
 }
