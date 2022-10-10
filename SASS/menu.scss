@@ -80,17 +80,29 @@ main{
                 background:linear-gradient($Secondaire,$Primaire);
                 background-clip:text;
                 color: transparent;
-        }
+            }
         
     } 
 
 }
+
+.all__menu__container{
+@include desktop-only{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+}
+
 .menu__display{
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 0%;
     margin:0 0 50px;
+    @include desktop-only{
+        width: 33%;
+    }
     &__title{
         text-transform:uppercase;
         font-size: 20px;

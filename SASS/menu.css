@@ -166,12 +166,25 @@ main {
   color: transparent;
 }
 
+@media screen and (min-width: 1025px) {
+  .all__menu__container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
 .menu__display {
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding: 0%;
   margin: 0 0 50px;
+}
+@media screen and (min-width: 1025px) {
+  .menu__display {
+    width: 33%;
+  }
 }
 .menu__display__title {
   text-transform: uppercase;
