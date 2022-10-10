@@ -100,19 +100,19 @@ main{
     }
     &__container{
         height:65px;
-        width:100% ;
+        width:100%;
         cursor:pointer;
         display:flex;
-        overflow:hidden;
         border-radius:10px;
         background: white;
         box-shadow: rgb(0 0 0 / 40%) 0px 2px 4px, rgb(0 0 0 / 30%) 0px 7px 13px -3px, rgb(0 0 0 / 20%) 0px -2px 0px inset;
         padding:0px;
         margin: 0%;
         opacity: 0;
-        &:hover > .starter__valid{
-            width: 100px;
-            .starter__valid__icon{
+        overflow: hidden;
+        &:hover > .menu__display__valid{
+            max-width: 100px;
+            .menu__display__valid__icon{
                 animation:rotate-center .5s ease-out both;
             }
         }
@@ -130,18 +130,17 @@ main{
         }
       }   
     &__valid{
-        width:0px;
+        max-width:0px;
         height:100%;
-        transition: width 0.5s;
+        transition: max-width 0.5s;
         background:#99e2d0;
         position: relative;
         display: flex;
         align-items: center;
-        overflow: hidden;
         box-shadow: rgb(0 0 0 / 30%) 0px 7px 13px -3px, rgb(0 0 0 / 20%) 0px -2px 0px inset;
         &__bloc{
-            margin: 15px;
             padding: 0%;
+            margin: 15px;
 
         }
         &__icon{
@@ -178,49 +177,39 @@ main{
 
 .starter{
     &__1{
-       animation: move 1s ease 0ms;
-       animation-fill-mode: forwards;
+       animation: move 1s ease 0ms forwards;
     }
     &__2{
-        animation: move 1.1s ease 100ms ;
-        animation-fill-mode: forwards;
+        animation: move 1.1s ease 100ms forwards ;
     }
     &__3{
-        animation: move 1.2s ease 200ms ;
-        animation-fill-mode: forwards;
+        animation: move 1.2s ease 200ms forwards;
     }
     &__4{
-        animation: move 1.3s ease  300ms;
-        animation-fill-mode: forwards;
+        animation: move 1.3s ease  300ms forwards;
     }
 }
 
 .main__course{
     &__1{
-        animation: move 1s ease 500ms;
-        animation-fill-mode: forwards;
+        animation: move 1s ease 500ms forwards;
      }
      &__2{
-         animation: move 1.1s ease 600ms ;
-         animation-fill-mode: forwards;
+         animation: move 1.1s ease 600ms forwards;
      }
      &__3{
-         animation: move 1.2s ease 700ms ;
-         animation-fill-mode: forwards;
+         animation: move 1.2s ease 700ms forwards;
      }
 }
 
 .dessert{
     &__1{
-        animation: move 1s ease 900ms;
-        animation-fill-mode: forwards;
+        animation: move 1s ease 900ms forwards;
      }
      &__2{
-         animation: move 1.1s ease 1000ms ;
-         animation-fill-mode: forwards;
+         animation: move 1.1s ease 1000ms forwards;
      }
      &__3{
-         animation: move 1.2s ease 1100ms ;
-         animation-fill-mode: forwards;
+         animation: move 1.2s ease 1100ms forwards;
      }
 }

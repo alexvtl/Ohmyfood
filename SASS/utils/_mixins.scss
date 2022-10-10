@@ -26,7 +26,7 @@
             transition: 500ms ease 0ms;
 }
 
-@mixin header($indexbtn) {
+@mixin header($positionindexbtn) {
     height:88px ;
     width: 100%;
     box-shadow: 1px 1px 15px gray;
@@ -35,14 +35,37 @@
     z-index: 1;
     position: relative;
     .index__btn{
-        position: absolute;
+        position: relative;
         left: 10%;
         color: black;
         font-size: 25px;
-        display: $indexbtn;
+        display: $positionindexbtn;
     }
     img{
         height:35px;
+        width: auto;
+        margin: auto;
         object-fit: cover;
     }
 }
+
+// BREAKPOINT TABLET & DESKTOP
+@mixin tablet-desktop {
+    @media screen and (min-width: map-get($breakpoints, tablet-min)) {
+      @content;
+    }
+  }
+  
+  // BREAKPOINT TABLET
+  @mixin tablet-only {
+    @media (min-width: map-get($breakpoints, tablet-min)) and (max-width: map-get($breakpoints, tablet-max)) {
+      @content;
+    }
+  }
+  
+  // BREAKPOINT DESKTOP
+  @mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+      @content;
+    }
+  }
