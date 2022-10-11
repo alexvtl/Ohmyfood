@@ -160,7 +160,7 @@ main{
         list-style-type: none;
         width: auto;
         height: 65px;
-        background: white;
+        background: #f6f6f6;
         border-radius: 10px;
         display: flex;
         align-items: center;
@@ -175,7 +175,7 @@ main{
         }
         &:hover{
             @include hover;
-            background-color: #f6f6f6;
+            background-color: lighten(#f6f6f6,2%);
             & > .preparation__button__logo{
                 color: #9356DC;
             }
