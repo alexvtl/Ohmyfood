@@ -70,9 +70,9 @@ opacity: 0;
 }
 
 @keyframes look {
-    0%{letter-spacing:1em;transform:translateZ(400px);opacity:0;color: $Primaire;}
+    0%{letter-spacing:1em;opacity:0;color: $Primaire;transform:scale(2);}
     40%{opacity:.6}
-    100%{transform:translateZ(0) rotateX(1turn);opacity:1;color: $Secondaire;}
+    100%{letter-spacing:0; transform: rotateX(1turn) scaleX(1);opacity:1;color: $Secondaire;}
 }
 
 
@@ -241,7 +241,7 @@ main{
         }
         &__new{
             position:absolute;
-            background: #99e2d0;
+            background: $Tertiaire;
             color:#1b6150;
             padding: 8px 15px;
             top:20px;

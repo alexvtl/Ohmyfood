@@ -189,7 +189,7 @@ main {
 .menu__display__title {
   text-transform: uppercase;
   font-size: 20px;
-  border-bottom: 3px solid #99e2d0;
+  border-bottom: 3px solid #99E2D0;
   width: 50px;
   margin-bottom: 10px;
 }
@@ -210,8 +210,8 @@ main {
   max-width: 100px;
 }
 .menu__display__container:hover > .menu__display__valid .menu__display__valid__icon {
-  -webkit-animation: rotate-center 0.5s ease-out both;
-          animation: rotate-center 0.5s ease-out both;
+  -webkit-animation: rotate-center 0.5s ease-out forwards;
+          animation: rotate-center 0.5s ease-out forwards;
 }
 .menu__display__text {
   height: 100%;
@@ -229,7 +229,7 @@ main {
   max-width: 0px;
   height: 100%;
   transition: max-width 0.5s;
-  background: #99e2d0;
+  background: #99E2D0;
   position: relative;
   display: flex;
   align-items: center;
@@ -242,7 +242,7 @@ main {
 .menu__display__valid__icon {
   font-size: 20px;
   font-weight: 900;
-  color: #99e2d0;
+  color: #99E2D0;
   background-color: white;
   border-radius: 50%;
   align-self: center;
