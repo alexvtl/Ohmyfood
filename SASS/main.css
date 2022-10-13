@@ -25,6 +25,12 @@ footer {
   flex-direction: column;
   gap: 10px;
 }
+@media screen and (min-width: 768px) {
+  .footer__links {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .footer__links a {
   color: white;
   text-decoration: none;
@@ -48,12 +54,12 @@ footer {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .loading__page {
-    height: 2071px;
+    height: 1984px;
   }
 }
 @media screen and (min-width: 1025px) {
   .loading__page {
-    height: 1461px;
+    height: 1374px;
   }
 }
 .loading__page__text {

@@ -18,6 +18,10 @@ footer{
         display: flex;
         flex-direction: column;
         gap: 10px;
+        @include tablet-desktop{
+            flex-direction: row;
+            justify-content: space-between;
+        }
         a{
             color: white;
             text-decoration: none;
