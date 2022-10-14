@@ -70,9 +70,8 @@ opacity: 0;
 }
 
 @keyframes look {
-    0%{letter-spacing:1em;opacity:0;color: $Primaire;transform:scale(2);}
-    40%{opacity:.6}
-    100%{letter-spacing:0; transform: rotateX(1turn) scaleX(1);opacity:1;color: $Secondaire;}
+    0%{letter-spacing:1em;color: $Primaire;transform:scaleX(2);}
+    100%{letter-spacing:0; transform: scaleX(1) rotateX(1turn);color: $Secondaire;}
 }
 
 
